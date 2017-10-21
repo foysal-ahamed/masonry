@@ -18,10 +18,19 @@
 </head>
 
 <body>
-	<h1 class=" text-center">Masonry Layout</h1>
+	<h1 class="text-center">Masonry Layout</h1>
+
+	<div class="filter-menu">
+		<ul>
+			<h5>Filter With Isotope</h5>
+			<li data-filter="*">All</li>
+			<li data-filter=".web">web</li>
+			<li data-filter=".design">design</li>
+		</ul>
+	</div>
 	<div class="masonry-container">
 		<div class="masonry-items">
-			<div class="single-masonry masonry-wrraper four">
+			<div class="single-masonry masonry-wrraper four design">
 				<div class="masonry-bg bg-1"></div>
 				<div class="description">
 					<h1>Items Name</h1>
@@ -35,7 +44,7 @@
 				</div>
 			</div>
 
-			<div class="single-masonry masonry-wrraper">
+			<div class="single-masonry masonry-wrraper web">
 				<div class="masonry-bg bg-2"></div>
 				<div class="description">
 					<h1>Items Name</h1>
@@ -61,7 +70,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="single-masonry masonry-wrraper two">
+			<div class="single-masonry masonry-wrraper two web">
 				<div class="masonry-bg bg-2"></div>
 				<div class="description">
 					<h1>Items Name</h1>
@@ -87,7 +96,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="single-masonry masonry-wrraper two">
+			<div class="single-masonry masonry-wrraper two design web">
 				<div class="masonry-bg bg-3"></div>
 				<div class="description">
 					<h1>Items Name</h1>
@@ -147,7 +156,9 @@
 	<script src="./assets/js/jquery-3.2.1.slim.min.js"></script>
 	<script src="./assets/js/popper.min.js"></script>
 	<script src="./assets/js/bootstrap.min.js"></script>
+	<script src="assets/js/isotope.pkgd.min.js"></script>
 	<script src="assets/js/masonry.pkgd.min.js"></script>
+	<script src="assets/js/jquery.filterizr.min.js"></script>
 	<script src="./assets/js/main.js"></script>
 </body>
 
