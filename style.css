@@ -92,6 +92,99 @@ h7 {
 	height: 800px;
 }
 
+.description {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	z-index: 3;
+	color: #fff;
+	width: 300px;
+	display: block;
+	margin-left: -150px;
+	text-align: center;
+	transform: translateY(-50%);
+}
+
+.description h1 {
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	font-weight: 700;
+	transition: 1s;
+}
+
+.description h1,
+.description p {
+	font-size: 0px;
+	opacity: 0;
+	visibility: hidden;
+
+}
+
+.description p {
+	text-transform: uppercase;
+	margin: 10px 0;
+	transition: 1s;
+}
+
+.single-masonry:hover .description h1 {
+	opacity: 1;
+	visibility: visible;
+	font-size: 40px;
+	transition: 0.5s;
+
+}
+
+.single-masonry:hover .description p {
+	opacity: 1;
+	visibility: visible;
+	font-size: 14px;
+	transition: 0.5s;
+	margin-bottom: 20px;
+
+}
+
+.social-icons a {
+	margin: 0 10px;
+	border: 1px solid;
+	padding: 0;
+	transition: 1s;
+	display: inline-block;
+	font-size: 1px;
+	opacity: 0;
+	visibility: hidden;
+
+}
+
+.single-masonry:hover .social-icons a {
+	padding: 5px 12px;
+	font-size: 12px;
+	opacity: 1;
+	visibility: visible;
+	transition: 0.5s
+}
+
+.social-icons a:hover.facebook {
+	transform: rotate(360deg);
+	color: #fff;
+	background: #3b5998;
+}
+
+.social-icons a:hover.twitter {
+	transform: rotate(360deg);
+	background: #55acee;
+}
+
+.social-icons a:hover.linkedin {
+	transform: rotate(360deg);
+	background: #007bb5;
+}
+
+.social-icons a:hover.github {
+	transform: rotate(360deg);
+	background: #000;
+}
+
+
 /*Responsive*/
 
 @media (max-width: 991px) {
@@ -103,5 +196,18 @@ h7 {
 @media (max-width: 767px) {
 	.single-masonry {
 		width: 100%;
+	}
+}
+
+@media (max-width: 480px) {
+	.single-masonry:hover .description h1 {
+		font-size: 20px;
+
+	}
+}
+@media (max-width: 320px) {
+	.single-masonry:hover .description h1 {
+		font-size: 20px;
+
 	}
 }
